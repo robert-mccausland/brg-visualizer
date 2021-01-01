@@ -21,11 +21,11 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - 'v1-npm-deps-{{ checksum: "package-lock.json" }}'
-            - 'v1-npm-deps-'
+            - v1-npm-deps-{{ checksum "package-lock.json" }}
+            - v1-npm-deps-
       - run: npm install
       - save_cache:
-          key: 'v1-npm-deps-{{ checksum: "package-lock.json" }}'
+          key: v1-npm-deps-{{ checksum "package-lock.json" }}
           paths:
             - node_modules
       - run: npm run build
