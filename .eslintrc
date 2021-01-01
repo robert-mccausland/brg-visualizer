@@ -18,6 +18,8 @@
   },
   "globals": {
     "window": "readonly",
-    "document": "readonly"
+    "document": "readonly",
+    "it": "readonly",
+    "describe": "readonly"
   }
 }
