@@ -10,13 +10,13 @@ workflows:
   heroku_deploy:
     jobs:
       - build
-      - heroku/deploy-via-git
-        requires:
-          - node/build
-        filters:
-          branches:
-            only:
-              - main
+      - heroku/deploy-via-git:
+          requires:
+            - node/build
+          filters:
+            branches:
+              only:
+                - main
 jobs:
   build:
     docker:
