@@ -7,6 +7,8 @@ workflows:
     jobs:
       - build
       - heroku/deploy-via-git:
+          app-name:
+            - brg-visualizer-stage
           requires:
             - build
           filters:
