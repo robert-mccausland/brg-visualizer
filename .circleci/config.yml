@@ -3,16 +3,12 @@ orbs:
   heroku: circleci/heroku@1.2.3
 
 workflows:
-  node-tests:
-    jobs:
-      - node/test
-
   heroku_deploy:
     jobs:
       - build
       - heroku/deploy-via-git:
           requires:
-            - node/build
+            - build
           filters:
             branches:
               only:
