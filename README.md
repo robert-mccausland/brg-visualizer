@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-[![robert-mccausland](https://circleci.com/gh/robert-mccausland/brg-visualizer.svg?style=shield)](<LINK>)
+[![robert-mccausland](https://circleci.com/gh/robert-mccausland/brg-visualizer.svg?style=shield)](https://app.circleci.com/pipelines/github/robert-mccausland/brg-visualizer)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
