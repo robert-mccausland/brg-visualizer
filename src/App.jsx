@@ -148,7 +148,10 @@ function App() {
                 </Typography>
                 <Typography variant="body1" gutterBottom>
                   If you have any feedback / suggestions / bugs you want to let me know
-                  about then please make an issue on GitHub.
+                  about then please make an issue on
+                  {' '}
+                  <Link href="https://github.com/robert-mccausland/brg-visualizer">GitHub</Link>
+                  .
                 </Typography>
               </CardContent>
             </Card>

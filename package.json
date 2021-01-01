@@ -7,13 +7,11 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
-    "chai": "^4.2.0",
     "lodash": "^4.17.20",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-draggable": "^4.4.3",
-    "react-scripts": "^4.0.1",
     "recharts": "^1.8.5",
     "web-vitals": "^0.2.4"
   },
@@ -38,8 +36,10 @@
   "devDependencies": {
     "eslint": "^7.16.0",
     "eslint-config-airbnb": "^18.2.1",
+    "chai": "^4.2.0",
     "husky": "^4.3.6",
     "install": "^0.13.0",
+    "react-scripts": "^4.0.1",
     "lint-staged": "^10.5.3"
   },
   "husky": {

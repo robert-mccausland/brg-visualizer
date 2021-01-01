@@ -21,7 +21,7 @@ function BearingRateChart({ currentTime, chartData, durationShown }) {
         />
         <XAxis tickCount={9} domain={[-180, 180]} type="number" />
         <CartesianGrid stroke="#e0e0e0" />
-        <ReferenceLine x={0} stroke="#666666" strokeWidth={2} />
+        <ReferenceLine x={0} stroke="#666666" strokeWidth={1} />
         <ReferenceLine x={180} stroke="#666666" strokeWidth={1} />
         <ReferenceLine x={-180} stroke="#666666" strokeWidth={1} />
         <Line type="monotone" dataKey="bearing" stroke="#ff0000" connectNulls={false} />

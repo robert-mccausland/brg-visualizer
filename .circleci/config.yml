@@ -5,28 +5,9 @@ orbs:
 workflows:
   heroku_deploy:
     jobs:
-      - build
       - heroku/deploy-via-git:
           app-name: brg-visualizer-stage
-          requires:
-            - build
           filters:
             branches:
               only:
                 - main
-jobs:
-  build:
-    docker:
-      - image: cimg/node:14.15.3
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - v1-npm-deps-{{ checksum "package-lock.json" }}
-            - v1-npm-deps-
-      - run: npm install
-      - save_cache:
-          key: v1-npm-deps-{{ checksum "package-lock.json" }}
-          paths:
-            - node_modules
-      - run: npm run build
