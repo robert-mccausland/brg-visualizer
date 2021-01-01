@@ -1,0 +1,15 @@
+.Visualizer-Object {
+  height: 2em;
+  width: 2em;
+  position: absolute;
+}
+.Visualizer-Container {
+  height: 100%;
+  position: relative;
+  background: #ffffff;
+  background-image: 
+    linear-gradient(#e0e0e0 .1em, transparent .1em), 
+    linear-gradient(90deg,#e0e0e0 .1em, transparent .1em);
+  background-size: 50px 50px;
+  background-position: center;
+}
