@@ -11,7 +11,7 @@ workflows:
     jobs:
       - build
       - heroku/deploy-via-git
-        required:
+        requires:
           - node/build
         filters:
           branches:
